@@ -1,0 +1,7 @@
+﻿# Historical experiment environment, for reference. Not a guarantee of package availability on other systems.
+Python 3.13.9
+numpy 2.5.4
+torch 2.14.1+cpu
+scipy 1.18.1
+scikit-learn 1.9.1
+matplotlib 3.11.2

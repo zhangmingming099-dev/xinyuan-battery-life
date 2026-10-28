@@ -1,0 +1,7 @@
+﻿-r requirements_inference.txt
+scipy
+scikit-learn
+threadpoolctl
+matplotlib
+h5py
+pandas
