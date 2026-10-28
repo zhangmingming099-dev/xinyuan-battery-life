@@ -1,0 +1,7 @@
+{
+  "selected_epochs": 84,
+  "epochs_run": 114,
+  "best_inner_mse": 0.8146227598190308,
+  "elapsed_seconds": 944.8654009000002,
+  "selection_uses_calibration_or_test": false
+}

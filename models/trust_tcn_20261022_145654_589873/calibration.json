@@ -1,0 +1,76 @@
+{
+  "method": "absolute-residual split conformal, finite-sample order statistic",
+  "intervals": [
+    {
+      "nominal_coverage": 0.9,
+      "alpha": 0.1,
+      "radius": 948.9635009765625,
+      "order_statistic": 24,
+      "n_calibration": 25
+    },
+    {
+      "nominal_coverage": 0.95,
+      "alpha": 0.05,
+      "radius": 1111.9373779296875,
+      "order_statistic": 25,
+      "n_calibration": 25
+    }
+  ],
+  "review_thresholds": [
+    {
+      "target_acceptance": 0.5,
+      "threshold": 1.086777611623214
+    },
+    {
+      "target_acceptance": 0.6,
+      "threshold": 1.2230391954158824
+    },
+    {
+      "target_acceptance": 0.7,
+      "threshold": 1.474404618854704
+    },
+    {
+      "target_acceptance": 0.8,
+      "threshold": 1.7945701127572748
+    },
+    {
+      "target_acceptance": 0.9,
+      "threshold": 2.672632175743254
+    },
+    {
+      "target_acceptance": 1.0,
+      "threshold": null
+    }
+  ],
+  "primary_acceptance": 0.8,
+  "calibration_cells": [
+    "b2c38",
+    "b3c17",
+    "b2c35",
+    "b2c47",
+    "b2c42",
+    "b2c11",
+    "b3c8",
+    "b1c34",
+    "b1c11",
+    "b1c32",
+    "b3c45",
+    "b1c0",
+    "b3c20",
+    "b1c3",
+    "b2c1",
+    "b3c38",
+    "b3c44",
+    "b1c19",
+    "b3c11",
+    "b1c30",
+    "b3c25",
+    "b3c31",
+    "b1c21",
+    "b2c20",
+    "b1c37"
+  ],
+  "model_sha256": "6f4e36e1a7a10c951c8b1bc9e0e4f34a50a553560b336399986ddecb28879060",
+  "review_is_heuristic": true,
+  "warning": "Constant residual radius; do not use interval width or clipping-induced width changes as a risk ranking."
+}

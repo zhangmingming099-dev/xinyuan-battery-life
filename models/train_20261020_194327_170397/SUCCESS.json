@@ -1,0 +1,90 @@
+{
+  "status": "MATR_curve_network_comparison_complete",
+  "evaluated_experiments": [
+    "random"
+  ],
+  "evaluated_folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "models": [
+    "tcn",
+    "tecan",
+    "model2"
+  ],
+  "is_full_five_fold": true,
+  "original_cells": 124,
+  "common_knee_qualified_cells": 124,
+  "knee_label_status_counts": {
+    "valid_by_rule": 124
+  },
+  "source_unchanged": true,
+  "metrics": [
+    {
+      "experiment": "random",
+      "model": "median",
+      "n_predictions": 124,
+      "n_unique_cells": 124,
+      "MAE_cycles": 276.68951612903226,
+      "RMSE_cycles": 388.17658674886616,
+      "bias_cycles": -81.63306451612904,
+      "CL_MAPE_percent": 36.6565809154185,
+      "interval_evaluated_cells": 124,
+      "SCP_coverage": 0.9435483870967742,
+      "SCP_mean_width": 1523.2983870967741,
+      "CTK_evaluable_cells": 0,
+      "CTK_MAE": null
+    },
+    {
+      "experiment": "random",
+      "model": "model2",
+      "n_predictions": 124,
+      "n_unique_cells": 124,
+      "MAE_cycles": 276.65631547296135,
+      "RMSE_cycles": 383.19701840027756,
+      "bias_cycles": -32.722446406846565,
+      "CL_MAPE_percent": 39.144080030701254,
+      "interval_evaluated_cells": 124,
+      "SCP_coverage": 0.9435483870967742,
+      "SCP_mean_width": 1528.6235457490197,
+      "CTK_evaluable_cells": 124,
+      "CTK_MAE": 215.6187624023006
+    },
+    {
+      "experiment": "random",
+      "model": "tcn",
+      "n_predictions": 124,
+      "n_unique_cells": 124,
+      "MAE_cycles": 275.29676621960056,
+      "RMSE_cycles": 380.6789189474129,
+      "bias_cycles": -21.991758777249245,
+      "CL_MAPE_percent": 39.5262556063507,
+      "interval_evaluated_cells": 124,
+      "SCP_coverage": 0.9435483870967742,
+      "SCP_mean_width": 1528.740977625693,
+      "CTK_evaluable_cells": 0,
+      "CTK_MAE": null
+    },
+    {
+      "experiment": "random",
+      "model": "tecan",
+      "n_predictions": 124,
+      "n_unique_cells": 124,
+      "MAE_cycles": 276.5423889160156,
+      "RMSE_cycles": 383.04731428382206,
+      "bias_cycles": -32.345066193611395,
+      "CL_MAPE_percent": 39.147699718581066,
+      "interval_evaluated_cells": 124,
+      "SCP_coverage": 0.9435483870967742,
+      "SCP_mean_width": 1530.9094518846082,
+      "CTK_evaluable_cells": 0,
+      "CTK_MAE": null
+    }
+  ],
+  "CTK_is_algorithmic_proxy": true,
+  "risk_rejection_evaluated": false,
+  "independent_blind_test": false
+}

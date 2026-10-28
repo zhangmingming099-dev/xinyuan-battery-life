@@ -1,0 +1,8 @@
+{
+  "status": "algorithmic_knee_labels_complete",
+  "counts": {
+    "valid_by_rule": 124
+  },
+  "needs_visual_review": true,
+  "not_independently_measured_knee": true
+}

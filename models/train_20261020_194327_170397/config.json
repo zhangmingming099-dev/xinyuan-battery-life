@@ -1,0 +1,50 @@
+{
+  "source_paper": "10.3390/sym17030351",
+  "data_directory": "C:\\Users\\29831\\Desktop\\作品其他材料链接\\01_最终代码源码\\xinyuanzhice\\results\\curves_20261020_183314_791763",
+  "arguments": {
+    "data": null,
+    "output_root": "D:\\xinyuanzhice\\models",
+    "experiment": "random",
+    "models": "tcn,tecan,model2",
+    "folds": "1,2,3,4,5",
+    "epochs": 450,
+    "patience": 50,
+    "lr": 1e-05,
+    "batch_size": 8,
+    "charge_bins": 128,
+    "seed": 2026,
+    "threads": 4,
+    "device": "auto",
+    "labels_only": false,
+    "self_test": false
+  },
+  "python": "3.13.9",
+  "numpy": "2.5.4",
+  "torch": "2.14.1+cpu",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "input_sha256": {
+    "D:\\xinyuanzhice\\results\\curves_20261020_183314_791763\\curves.npz": "61c892687865da449ffe96a2265719238544347c13feb4da848fc81d9db2022b",
+    "D:\\xinyuanzhice\\results\\curves_20261020_183314_791763\\labels.csv": "acd9d07fcd4c509ed8249be7280c0325b4240cb8e6269558b13db7b37908efd0",
+    "D:\\xinyuanzhice\\results\\curves_20261020_183314_791763\\folds_random.csv": "6247792922d8873c3440953fa5ff18312d0dafb9ec7dff460842ad10890555c7",
+    "D:\\xinyuanzhice\\results\\curves_20261020_183314_791763\\folds_protocol.csv": "43f9980414e8f1dca9c4509e39f0c82f32c7071e32f4930a9b653ecd02873da9",
+    "D:\\xinyuanzhice\\results\\curves_20261020_183314_791763\\config.json": "2825b74876cde70fbfc86165d8ac1d0ee491c8089d5c1b8079c9bfb3f4bff7a1",
+    "D:\\xinyuanzhice\\results\\curves_20261020_183314_791763\\SUCCESS.json": "1436464f51f4a090158d9655c0b8ed8e67b9ed87976ef69ef176683493560c83"
+  },
+  "selection_uses_outer_calibration": false,
+  "selection_uses_outer_test": false,
+  "method": "paper-inspired reimplementation; no MCCA spatial branch",
+  "deviations": [
+    "normalized-coordinate robust CTK algorithm with explicit failure rules",
+    "source units retained; train-only scalar minmax and median imputation",
+    "fixed capacity-axis mean pooling before encoder; default128, optional1024",
+    "observed fraction extra channel and learnable 4-to-1 fusion",
+    "LeakyReLU .1, dropout .1, last-time mean-over-capacity head",
+    "internal early stopping then fresh outer-train refit; training-only CL mapping"
+  ],
+  "scope": "exploratory; previous outer tests already seen; common CTK-qualified training subset; unfiltered outer calibration and test"
+}

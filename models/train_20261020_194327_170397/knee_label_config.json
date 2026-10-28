@@ -1,0 +1,26 @@
+{
+  "source_hashes": {
+    "D:\\LvShuangJianBing\\data\\processed\\MATR\\run_20261014_151926_979411\\cycle_summary.csv": "ae31ae592d2a53a5a8ac0f04229faddbb6324fd66a49ffdbc817295920b4344c",
+    "D:\\LvShuangJianBing\\data\\features\\MATR\\run_20261014_161349_479681\\SUCCESS.json": "ada909b1999898d0a069aed035b1c4e14e8df7e342a8e68edb16cb95869966a2"
+  },
+  "coordinates": "x=(cycle-first_valid)/(last_valid-first_valid); y=Q/1.1",
+  "polynomial_degree": 5,
+  "bacon_eta": 1e-08,
+  "bacon_loss": "soft_l1",
+  "f_scale": 0.005,
+  "fit_rmse_limit_Ah": 0.03,
+  "require_unique_root": true,
+  "label_is_algorithmic_proxy": true,
+  "full_trajectory_used_for_label_only": true,
+  "known_masks": [
+    [
+      "b1c0",
+      12
+    ],
+    [
+      "b1c18",
+      40
+    ]
+  ],
+  "not_paper_exact_CTK": true
+}

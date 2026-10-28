@@ -1,0 +1,3 @@
+﻿nominal_coverage,n_test,covered_count,observed_coverage,mean_interval_width,radius_cycles
+0.9,25,24,0.96,1594.0243640136719,948.9635009765625
+0.95,25,25,1.0,1764.2789440917968,1111.9373779296875

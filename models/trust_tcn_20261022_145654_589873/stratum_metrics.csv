@@ -1,0 +1,4 @@
+﻿stratum,n_test,MAE,interval90_coverage,accepted_at_cal80
+fast,20,220.90373992919922,1.0,17
+medium,3,132.1251220703125,1.0,1
+slow,2,564.2390441894531,0.5,0
