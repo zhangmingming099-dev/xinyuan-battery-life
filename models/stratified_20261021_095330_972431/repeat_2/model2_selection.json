@@ -1,0 +1,21 @@
+{
+  "candidates": [
+    {
+      "lr": 0.0001,
+      "selected_epochs": 63,
+      "inner_target_mse": 0.7200179696083069
+    },
+    {
+      "lr": 0.001,
+      "selected_epochs": 144,
+      "inner_target_mse": 0.4193481504917145
+    }
+  ],
+  "selected": {
+    "lr": 0.001,
+    "selected_epochs": 144,
+    "inner_target_mse": 0.4193481504917145
+  },
+  "outer_test_used": false,
+  "criterion": "minimum standardized target MSE on inner validation"
+}
