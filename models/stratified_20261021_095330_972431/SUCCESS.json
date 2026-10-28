@@ -1,0 +1,46 @@
+{
+  "status": "stratified_repeated_point_prediction_complete",
+  "completed_repeats": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "summary": [
+    {
+      "model": "median",
+      "n_repeats": 5,
+      "MAE_mean": 313.104,
+      "MAE_sample_std": 34.454440642680595,
+      "RMSE_mean": 437.54871290203744,
+      "RMSE_sample_std": 66.2851778093183
+    },
+    {
+      "model": "model2",
+      "n_repeats": 5,
+      "MAE_mean": 249.8696359717963,
+      "MAE_sample_std": 38.24642454930473,
+      "RMSE_mean": 352.8913108231515,
+      "RMSE_sample_std": 45.0451756771999
+    },
+    {
+      "model": "tcn",
+      "n_repeats": 5,
+      "MAE_mean": 245.5732177734375,
+      "MAE_sample_std": 30.855189987144925,
+      "RMSE_mean": 342.3221508124562,
+      "RMSE_sample_std": 51.76323737005888
+    },
+    {
+      "model": "tecan",
+      "n_repeats": 5,
+      "MAE_mean": 282.0404875488281,
+      "MAE_sample_std": 30.65457702016212,
+      "RMSE_mean": 376.2077244281294,
+      "RMSE_sample_std": 56.16716432652884
+    }
+  ],
+  "full_five_repeats": true,
+  "caution": "sample standard deviations describe repeated splits, not independent-trial confidence intervals"
+}

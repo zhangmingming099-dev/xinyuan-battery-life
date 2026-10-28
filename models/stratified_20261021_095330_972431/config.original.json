@@ -1,0 +1,40 @@
+{
+  "protocol": "screenshot-inspired 5 repeated stratified 99/25 splits, not fivefold CV",
+  "source_run": "D:\\xinyuanzhice\\models\\train_20261020_194327_170397",
+  "data": "D:\\xinyuanzhice\\results\\curves_20261020_183314_791763",
+  "tensor_sha256": "61c892687865da449ffe96a2265719238544347c13feb4da848fc81d9db2022b",
+  "source_map_sha256": "63d5b5e732bea8ceba1992a1246622b1f6ec78a5becd5921abf25ebd7ad43060",
+  "source03_sha256": "8933d116145a575153b491e4d7f50cca8a61da5d91ec586431a71a10cc82de42",
+  "source_knee_sha256": "f28f2b7d81300bce96365d94640dedd6452222cabd732b9cfe8a4521952e5943",
+  "script_sha256": "58ab3b1923705bc51a3a6849f8366635d8f9acd9e4935cdbabc2138f168e0a0e",
+  "seed": 20261021,
+  "learning_rates": [
+    0.0001,
+    0.001
+  ],
+  "batch_size": 8,
+  "device": "cpu",
+  "arguments": {
+    "run": "D:\\xinyuanzhice\\models\\train_20261020_194327_170397",
+    "repeats": "1,2,3,4,5",
+    "models": "tcn,tecan,model2",
+    "epochs": 150,
+    "patience": 30,
+    "bins": 128,
+    "threads": 2,
+    "prepare_only": false,
+    "self_test": false
+  },
+  "stratum_rule": "nominal 0-80% time=60*(q1/C1+(.8-q1)/C2); fast<10.5; medium10.5..11.7; slow>11.7",
+  "unit_check": "early measured source median/nominal minutes must be in [.8,1.2]; sanity check only",
+  "inner": "79 fit /20 validation stratified within each 99 training cells; fit-only preprocessing",
+  "outer": "select lr and epoch internally, fresh 99-cell refit, then 25-cell test",
+  "scope": "exploratory known dataset; test identities may recur across repeats; no interval or deployment claim",
+  "deviations": [
+    "exact author split IDs and seeds unavailable",
+    "explicit boundary convention: 10.5 and11.7 included in medium",
+    "TECAN-inspired architecture unchanged from03; 128 bins, mask, fusion and head deviations retained",
+    "150epoch cap,30patience and two lr candidates; not exact paper hyperparameters",
+    "algorithmic CTK proxy reused; no independent knee ground truth"
+  ]
+}
