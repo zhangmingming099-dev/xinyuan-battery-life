@@ -1,0 +1,63 @@
+{
+  "paper_section": "3.1.2 Input Data Generation",
+  "source_paper": "10.3390/sym17030351",
+  "project_root": "D:\\LvShuangJianBing",
+  "feature_dir": "D:\\LvShuangJianBing\\data\\features\\MATR\\run_20261014_161349_479681",
+  "summary_dir": "D:\\LvShuangJianBing\\data\\processed\\MATR\\run_20261014_151926_979411",
+  "random_run": "D:\\LvShuangJianBing\\models\\MATR\\yanzheng_20261016_113743_030988",
+  "protocol_run": "D:\\LvShuangJianBing\\models\\MATR\\xieyi_20261016_115905_500649",
+  "shape": [
+    124,
+    3,
+    100,
+    1024
+  ],
+  "channels": [
+    "V_source",
+    "I_source",
+    "T_source"
+  ],
+  "grid": {
+    "axis": "source_Qc",
+    "source_capacity_convention": "Ah per existing summary; no rescaling",
+    "min": 0.01,
+    "max": 1.0,
+    "points": 1024,
+    "interpolation": "nearest",
+    "choice": "fixed a priori; not fitted using test data"
+  },
+  "current_unit": "source values preserved; C-rate hypothesis not promoted to confirmed A",
+  "time_rule": "tiny negative dt within max(1e-10,64*eps*scale) recorded; real reversal blocks cycle",
+  "phase_rule": "before first Qd>0.01; I_source>0.02; Qc>0; finite V/I/T/Qc/Qd/t",
+  "duplicate_rule": "retain first strictly increasing Qc observations; record omitted points",
+  "missing_rule": "NaN plus observed mask; no extrapolation, no missing-cycle fill",
+  "max_q_gap": 0.03,
+  "normalization": "none; future training must fit scaling and imputation inside training fold",
+  "paper_deviations": [
+    "119-cell list and author split not reproduced",
+    "explicit fixed absolute Qc grid 0.01..1.00 by default; exact paper endpoints unspecified",
+    "missingness is explicit; no global normalization or guessed V/I/T fusion",
+    "charging-stage thresholds are implementation choices pending source clarification"
+  ],
+  "input_sha256": {
+    "D:\\LvShuangJianBing\\data\\features\\MATR\\run_20261014_161349_479681\\labels.csv": "1fb9b301936ccf8afcc94145bd3b694993b9276cd335732ca10a30c305f82e34",
+    "D:\\LvShuangJianBing\\data\\processed\\MATR\\run_20261014_151926_979411\\cycle_summary.csv": "ae31ae592d2a53a5a8ac0f04229faddbb6324fd66a49ffdbc817295920b4344c",
+    "D:\\LvShuangJianBing\\models\\MATR\\yanzheng_20261016_113743_030988\\fenzu.csv": "6247792922d8873c3440953fa5ff18312d0dafb9ec7dff460842ad10890555c7",
+    "D:\\LvShuangJianBing\\models\\MATR\\xieyi_20261016_115905_500649\\fenzu.csv": "43f9980414e8f1dca9c4509e39f0c82f32c7071e32f4930a9b653ecd02873da9"
+  },
+  "raw_stat": {
+    "2017-05-12_batchdata_updated_struct_errorcorrect.mat": {
+      "size": 3025320241,
+      "mtime_ns": 1791890795674558800
+    },
+    "2017-06-30_batchdata_updated_struct_errorcorrect.mat": {
+      "size": 2007331155,
+      "mtime_ns": 1791894570381163200
+    },
+    "2018-04-12_batchdata_updated_struct_errorcorrect.mat": {
+      "size": 3236690412,
+      "mtime_ns": 1791894336364018200
+    }
+  },
+  "started_at": "2026-10-20T18:33:14.802133"
+}

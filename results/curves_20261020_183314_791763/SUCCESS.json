@@ -1,0 +1,29 @@
+{
+  "status": "MATR_curve_tensor_complete",
+  "cells": 124,
+  "tensor_shape": [
+    124,
+    3,
+    100,
+    1024
+  ],
+  "status_counts": {
+    "empty_placeholder": 41,
+    "aligned": 12359
+  },
+  "tiny_negative_time_steps": 17,
+  "real_negative_time_steps": 0,
+  "protocol_cell_count": 123,
+  "protocol_not_included": [
+    "b2c12"
+  ],
+  "observed_grid_fraction": 0.9966651178175403,
+  "source_stat_unchanged": true,
+  "source_csv_sha256_unchanged": true,
+  "original_mat_sha256_checked": false,
+  "tensor_sha256": "61c892687865da449ffe96a2265719238544347c13feb4da848fc81d9db2022b",
+  "normalization_fitted": false,
+  "CTK_labels_created": false,
+  "neural_network_trained": false,
+  "note": "数据准备完成；缺失处理和缩放须训练折内拟合；尚非精确论文复现"
+}
